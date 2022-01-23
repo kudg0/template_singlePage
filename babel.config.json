@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["> 1%", "ie >= 11"],
+          "esmodules": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-async-to-generator", {
+        "module": "bluebird",
+        "method": "coroutine"
+      }
+    ],
+    "@babel/plugin-transform-arrow-functions",
+    "@babel/plugin-transform-block-scoped-functions",
+    "@babel/plugin-transform-function-name",
+    "@babel/plugin-transform-sticky-regex"
+  ]
+}

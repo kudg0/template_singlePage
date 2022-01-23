@@ -1,0 +1,13 @@
+@mixin font-face($fontFamily) {
+  @font-face {
+    font-family: '#{$fontFamily}';
+    src: url('fonts/#{$fontFamily}.woff') format('woff');
+
+    font-display: swap;
+  }
+}
+
+@include font-face('GarciaMarquez');
+
+@include font-face('Montserrat-Regular');
+@include font-face('Montserrat-SemiBold');

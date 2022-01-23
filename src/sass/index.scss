@@ -1,0 +1,36 @@
+@import 'helpers/_mixins';
+@import 'helpers/_fontsadd';
+
+@import 'helpers/_base';
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  background: #242424;
+  background-image: url('img/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: repeat-x;
+
+  backdrop-filter: blur(5px);
+}
+
+@media (min-width: 649px) {
+  @import 'content/preloader';
+
+  @import 'content/header';
+}
+
+@media (max-width: 650px) {
+  body {
+    background-attachment: local;
+    background-size: 960px;
+  }
+}
