@@ -183,6 +183,17 @@ function scssProcess() {
     .pipe(gulp.dest(dist.css));
 }
 
+
+/**
+ * Работа с пользовательским js (Либы)
+ * @returns {*}
+ */
+function jsProcess_libs() {
+  return gulp
+    .src('./src/js/libs/*')
+    .pipe(changed('./public/js/libs/'))
+    .pipe(gulp.dest('./public/js/libs/'));
+}
 /**
  * Работа с пользовательским js (Главная страница)
  * @returns {*}
@@ -251,6 +262,7 @@ function watchFiles() {
     './src/js' + '/**/*.*',
     gulp.series(
       jsProcess,
+      jsProcess_libs,
       browserSyncReload,
     ),
   );
@@ -272,6 +284,7 @@ const build = gulp.series(
     htmlProcess,
 
     jsProcess,
+    jsProcess_libs,
 
     scssProcess,
 
