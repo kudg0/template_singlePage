@@ -162,7 +162,7 @@ function htmlProcess() {
  */
 function imgProcess() {
   return gulp
-    .src(src.img)
+    .src(src.img + '**/*')
     .pipe(changed(dist.img))
     .pipe(gulp.dest(dist.img));
 }
