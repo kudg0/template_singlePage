@@ -230,7 +230,7 @@ function jsProcess() {
 function inlineSource() {
   if (arg.production === 'true') {
     return gulp
-      .src(dist.html.main + '**/index.html')
+      .src(dist.html + '**/index.html')
       .pipe(
         inlinesource({
           compress: false,
