@@ -1,5 +1,5 @@
-//= include 'helpers/deviceType.js'
+//= include '_helpers/deviceType.js'
 
-//= include 'helpers/getCoords.js'
-//= include 'helpers/workWithHash.js'
-//= include 'helpers/gaPushEvents.js'
+//= include '_helpers/getCoords.js'
+//= include '_helpers/workWithHash.js'
+//= include '_helpers/gaPushEvents.js'

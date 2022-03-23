@@ -1,7 +1,7 @@
-@import 'helpers/_mixins';
-@import 'helpers/_fontsadd';
+@import '_helpers/_mixins';
+@import '_helpers/_fontsadd';
 
-@import 'helpers/_base';
+@import '_helpers/_base';
 
 body {
   display: flex;

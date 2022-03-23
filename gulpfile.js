@@ -174,9 +174,9 @@ function imgProcess() {
  */
 function scssProcess_libs() {
   return gulp
-    .src(paths.src + 'sass/libs/**/*')
-    .pipe(changed(paths.dist + 'css/libs/'))
-    .pipe(gulp.dest(paths.dist + 'css/libs/'));
+    .src(paths.src + 'sass/_libs/**/*')
+    .pipe(changed(paths.dist + 'css/_libs/'))
+    .pipe(gulp.dest(paths.dist + 'css/_libs/'));
 }
 /**
  * Склейка и обработка scss файлов
@@ -201,9 +201,9 @@ function scssProcess() {
  */
 function jsProcess_libs() {
   return gulp
-    .src(paths.src + 'js/libs/*')
-    .pipe(changed(paths.dist + 'js/libs/'))
-    .pipe(gulp.dest(paths.dist + 'js/libs/'));
+    .src(paths.src + 'js/_libs/*')
+    .pipe(changed(paths.dist + 'js/_libs/'))
+    .pipe(gulp.dest(paths.dist + 'js/_libs/'));
 }
 /**
  * Работа с пользовательским js (Главная страница)
